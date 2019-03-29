@@ -1,0 +1,6 @@
+framework module Pods_MediaCubeTest {
+  umbrella header "Pods-MediaCubeTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

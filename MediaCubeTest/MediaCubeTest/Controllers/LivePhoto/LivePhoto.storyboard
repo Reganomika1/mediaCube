@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WSP-sq-2d6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Photo Controller-->
+        <scene sceneID="NdO-cS-Jvx">
+            <objects>
+                <viewController id="WSP-sq-2d6" customClass="LivePhotoController" customModule="MediaCubeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dsu-AA-diG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0QE-Se-cDs">
+                                <rect key="frame" x="20" y="447" width="374" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0QE-Se-cDs" firstAttribute="leading" secondItem="Dsu-AA-diG" secondAttribute="leadingMargin" id="GBy-lS-K6k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0QE-Se-cDs" secondAttribute="trailing" id="QE4-C0-66m"/>
+                            <constraint firstItem="0QE-Se-cDs" firstAttribute="centerY" secondItem="Dsu-AA-diG" secondAttribute="centerY" id="uvG-5p-qI7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8nw-Af-iMs"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="0QE-Se-cDs" id="0qq-ye-Yky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfo-BG-hQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.04347826086962" y="-244.41964285714283"/>
+        </scene>
+    </scenes>
+</document>
